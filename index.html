@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Bootstrap core CSS     -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!--   Core JS Files   -->
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <!--page jsfile-->
+    <script src="js/index.js" type="text/javascript"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="cover">
+        <!--   Header starts -->
+        <div class="row">
+            <div class="col-lg-12" id="header">
+                <center><h3>Grouper</h3></center>
+            </div>
+        </div><!--  Heeader ends   -->
+
+        <!--   Main content starts -->
+        <div class="row">
+            <!--Left content starts-->
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="row-header">Generate list</div>
+                            <div class="form-group">
+                                <label for="prefix">Prefix</label>
+                                <input type="text" class="form-control" id="prefix"/>
+                                <label for="from">from</label>
+                                <input type="number" class="form-control" id="from"/>
+                                <label for="to">to</label>
+                                <input type="number" class="form-control" id="to"/>
+                                <button onclick="generatelist()" class="btn btn-block">GENERATE LIST</button>
+                                <hr>
+                            </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div id="row-header">Input list manually</div>
+                            <div class="form-group">
+                                <label for="textinput">Input text</label>
+                                <input type="text" class="form-control" id="addtolist"/>
+                                <button onclick="addtolist()" class="btn btn-block">ADD TO LIST</button>
+                                <hr>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="row-header"> LISTS GENERATED </div>
+                    <ul id="list-items">
+
+                    </ul>
+                </div>
+            </div><!--   Lefts contents ends -->
+
+            <!--   Right content starts  -->
+            <div class="col-lg-6" >
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="row-header">CREATE Group
+
+                        </div>
+                            <div class="form-group">
+                                <label for="textinput">Input number of groups</label>
+                                <input type="number" class="form-control" id="groupno"/>
+                                <button onclick="generategroup()" class="btn btn-block btn-success">CREATE GROUPS</button>
+                                <hr>
+                            </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div id="row-header">Generate Group</div>
+         
+                            <div class="form-group">
+                                <label class="radio-inline">
+                                <input type="radio" id="sq"/>Sequencial
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" id="rd"/>Random
+                                </label>
+                                <button onclick="group()" class="btn btn-block btn-success">GENERATE GROUP</button>
+                            </div>
+          
+                    </div>
+                </div>
+                <div class="row" id="groups">
+                    <div id="row-header"> <center>Groups</center> </div>   
+                       
+                </div>
+            </div><!-- Right content Ends  -->
+
+        </div><!-- Main contents Ends   -->
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    padding:0px;
+}
+
+#row-header{
+    width:100%;
+    padding:5px;
+    background-color:#d9e6df;
+    border:1px solid rgb(34, 14, 14);
+}
+
+#header{
+    background-color:rgba(12, 168, 90, 0.774);
+}
+
+#group_container{
+    width:100%;
+    background-color:rgb(224, 224, 224);
+}
+#group_head{
+    width:100%;
+    background-color:rgb(83, 4, 158);
+    color:white;
+    padding:10px;
+}
+#group_body{
+    width:100%;
+    background-color:rgb(224, 224, 224);
+}
